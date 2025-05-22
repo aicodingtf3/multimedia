@@ -33,7 +33,7 @@ namespace TizenMediaPlayer
         public void SetUrl(string url) => mp_set_url(_handle, url);
         public void Play() => mp_play(_handle);
         public void Pause() => mp_pause(_handle);
-        public void Seek() => mp_seek(_handle, positionMs);
+        public void Seek(int positionMs) => mp_seek(_handle, positionMs);
 
         public void Dispose()
         {
